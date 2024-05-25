@@ -1,0 +1,6 @@
+#file: noinspection YAMLSchemaValidation
+author: nevesbr6
+name: LegendsBungee
+version: 1.0
+
+main: dev.redelegends.bungee.Bungee

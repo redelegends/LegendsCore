@@ -1,0 +1,7 @@
+#file: noinspection YAMLSchemaValidation
+author: nevesbr6
+name: LegendsCore
+version: 1.0
+depend: [ProtocolLib, PlaceholderAPI]
+
+main: dev.redelegends.Core
