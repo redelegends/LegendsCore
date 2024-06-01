@@ -1,3 +1,4 @@
+//file:noinspection GroovyAssignabilityCheck
 plugins {
     id 'java'
 }
@@ -30,18 +31,19 @@ dependencies {
     compileOnly 'org.spigotmc:spigot:1.8.8-R0.1-SNAPSHOT'
     compileOnly 'com.comphenix.protocol:ProtocolLib:5.1.0'
     compileOnly 'me.clip:placeholderapi:2.11.5'
-    compileOnly 'org.mongodb:mongodb-driver-sync:4.2.1'
-    compileOnly 'org.mongodb:mongo-java-driver:3.12.10'
-    compileOnly 'com.zaxxer:HikariCP:2.3.2'
-    compileOnly 'org.mariadb.jdbc:mariadb-java-client:2.1.2'
+    compileOnly 'org.mongodb:mongodb-driver-sync:5.1.0'
+    compileOnly 'org.mongodb:mongo-java-driver:3.12.14'
+    compileOnly 'com.zaxxer:HikariCP:4.0.3'
+    compileOnly 'org.mariadb.jdbc:mariadb-java-client:3.4.0'
     compileOnly 'com.google.guava:guava:32.0.0-android'
-    compileOnly 'org.yaml:snakeyaml:2.0'
+    compileOnly 'org.yaml:snakeyaml:2.2'
     compileOnly 'io.socket:socket.io-client:2.1.0'
-    compileOnly 'org.json:json:20231013'
-    compileOnly 'com.squareup.okio:okio:3.4.0'
-    compileOnly 'com.squareup.okhttp3:okhttp:5.0.0-alpha.3'
+    compileOnly 'org.json:json:20240303'
+    compileOnly 'com.squareup.okio:okio:3.9.0'
+    compileOnly 'com.squareup.okhttp3:okhttp:5.0.0-alpha.14'
+    compileOnly 'org.jline:jline:3.26.1'
 
-    implementation files ('libs/waterfall.jar')
+    implementation files('libs/waterfall.jar')
 }
 
 def targetJavaVersion = 8
@@ -70,6 +72,7 @@ processResources {
         expand props
     }
 }
+
 
 jar {
     archiveBaseName.set('LegendsCore')
